@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tesla Developers</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="js/1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!-- MultiStep Form -->
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h2>Crea una cuenta</h2>
+		
+			<br>
+			<input type="text" placeholder="¿Cual es tu nombre?" />
+			<input type="email" placeholder="ejemplo@gmail.com" />
+            <input type="password" placeholder="Ingresa tu contraseña" />
+            <br>
+			<button>Todo Listo</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h2>Inicia Sesion</h2>
+			
+			<br>
+			<input type="email" placeholder="ejemplo@gmail.com" />
+			<input type="password" placeholder="Ingresa tu contraseña" />
+			<a href="#">¿Olvidaste tu contraseña?</a>
+			<button>Ingresar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h2>Bienvenido a Petalos Literaios</h2>
+                <p>Ingresa tus datos personales para empezar a leer con nosotros <br><br>¿Ya tienes una cuenta?
+                    </p>
+              
+				<button class="ghost" id="signIn">Inicia sesion</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Estamos Felices de verte de nuevo</h1>
+				<p>Para mantenerse conectado con nosotros, inicie sesión con su información personal <br><br>¿No tienes una cuenta?</p>
+				<button class="ghost" id="signUp">Registrate</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+// var signUpButton = document.getElementById('signUp');
+// var signInButton = document.getElementById('signIn');
+// var container = document.getElementById('container');
+
+// signUpButton = signUpButton.addEventListener('click', () => {
+// 	container =container.classList.add("right-panel-active");
+// });
+
+// signUpButton = signUpButton.addEventListener('click', () => {
+//     container = container.classList.remove("right-panel-active");
+//     container = container.classList.remove("right-panel");
+// });
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+</html>

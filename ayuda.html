@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ayuda</title>
+    <link rel="stylesheet" href="css/estiloyuda.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons8-libro-480.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/mediayuda.css">
+    <link rel="stylesheet" href="icomoon/fonts/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/mov.js"></script>
+</head>
+
+<body>
+ <!-- script del pushbar -->
+ <script type="text/javascript">
+    var pushbar = new Pushbar({
+        blur: true,
+        overlay: true,
+    });
+</script>
+     <!-- pushbar -->
+
+    <div data-pushbar-id="pushbar-menu" class="pushbar from_top pushbar-menu editpush">
+            <div btn-cerrar>
+                <button data-pushbar-close><span class="icon-cross closs"></span></button>
+            </div>
+            <h2>Se un Petálo Literario</h2>
+            <form action="" class="push">
+                <div class="place">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+                </div>
+    
+    
+                <div class="place">
+                    <label for="email">E-Mail</label>
+                    <input type="E-mail" id="email">
+                </div>
+    
+                <div class="place">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" id="pass">
+                </div>
+    
+    
+    
+            </form>
+            <div class="position">
+                <input class="botonp" type="submit" value="Todo Listo">
+            </div>
+            <div class="conf">
+            <div class="idioma">
+                <h4>Idioma</h4>
+                <div class="subemu">
+                    <a href="index.html">Español</a>
+                    <a href="../website english/index.html">Ingles</a>
+                </div>
+            </div>
+            <div class="idioma">
+                <h4>Colores</h4>
+                <div class="subemu">
+                        <a href="index.html">Oscuros</a>
+                        <a href="../website english/index.html">Claros</a>
+                    </div>
+            </div>
+        </div>
+    
+        </div>
+    
+    <!-- movedor arriba -->
+    <span class="ir-arriba icon-circle-up"></span>
+    <!-- cargador -->
+
+    <div id="contenedor_carga">
+        <div id="carga">
+
+        </div>
+    </div>
+    <!-- javascript girar desaparecer -->
+    <script>
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+
+    <header class="Header">
+            <div class="barra ">
+                    <img src="IMG/logo petalos.png" alt="LOGO "">
+                    <nav class=" nav "  id=" nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="#">Obras</a>
+                    <a href="Juegos Florales.html">Juegos Florales</a>
+                    <a href="categorias.html">Categorías</a>
+                    
+                    <a href="#" data-pushbar-target="pushbar-menu">Configuración</a>
+        
+                    </nav>
+            
+                </div>
+                
+        <div class="texto" id="texto">
+            <p>Bienvenidos a nuestro sitio web</p>
+            <h1>Petálos Literarios</h1>
+            <p> <i> Sitio web de obras del Colegio Salarrué creado por alumnos </i></p>
+
+        </div>
+        <div class="cajaes">
+            <a class="" href="#"> Escojer una obra</a>
+        </div>
+    </header>
+    <section class="textox">
+        <div class="sup">
+            <p>¿Necesitas</p>
+            <h2>AYUDA?</h2>
+        </div>
+        <div class="frases">
+            <h2>Lorem Ipsurm</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eaque velit aut, asa</p>
+        </div>
+    </section>
+    <main class="cate">
+
+        <article class="nos">
+            <h2>¿Como funciona la pagina?</h2>
+            <div class="nosotros-videote">
+                <div class="nostext">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore possimus
+                        eveniet iure vero blanditiis. Illum voluptatem corrupti, porro distinctio
+                        dolor maiores ratione error necessitatibus praesentium id? Accusamus labore
+                        voluptates harum!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore possimus
+                        eveniet iure vero blanditiis. Illum voluptatem corrupti, porro distinctio
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore possimus
+                        eveniet iure vero blanditiis. Illum voluptatem corrupti, porro distinctio
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore possimus
+                        eveniet iure vero blanditiis. Illum voluptatem corrupti, porro distinctio
+
+                    </p>
+
+                </div>
+                <div class="video">
+                    <!-- <embed src="videoplayback (1).mp4"> -->
+                    <video width="700" height="400" controls>
+                        <source src="videoplayback (1).mp4" type="video/mp4">
+                    </video>
+                </div>
+
+        </article>
+
+        <section class="cotenedorinfo">
+            <div class="textodo">
+                <div class="texto1">
+                    <h2>LOREM IPSURM</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!</p>
+                </div>
+
+                <div class="texto2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cotenedorinfo">
+            <div class="textodo">
+                <div class="texto2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!</p>
+                </div>
+
+                <div class="texto3">
+                    <h2>LOREM IPSURM</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus itaque sapiente deleniti placeat. Rem ullam ipsum ab
+                        dignissimos! Autem totam accusantium non tempora consequatur
+                        molestiae nihil voluptatem illum tempore quidem!</p>
+                </div>
+
+            </div>
+        </section>
+        </div>
+        <div class="zelda">
+            <a href="index.html">Empezar a Navegar</a>
+        </div>
+    </main>
+    <footer>
+        <div class="barr">
+            <img src="IMG/CsLaurel.JPG" alt="LOGO">
+            <nav class="na" id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Obras</a>
+                <a href="Juegos Florales.html">Juegos Florales</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="ayuda.html">Ayuda</a>
+                <a href="#">Inicia sesion</a>
+
+            </nav>
+
+        </div>
+        <div class="textoo">
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Commodi debitis omnis blanditiis
+                magnam similique esse laborum expedita excepturi
+                quos, nisi adipisci sit
+                maiores ab totam ex, ipsa rem id vero?</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
